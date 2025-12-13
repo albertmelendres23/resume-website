@@ -108,12 +108,12 @@
       .dark ::-webkit-scrollbar-thumb { background: #274155; }
     </style>
   </head>
-  <body class="bg-slate-50 text-slate-900 font-sans transition-colors duration-200">
+  <body class="bg-gray-50 text-slate-900 font-sans transition-colors duration-200 leading-relaxed">
     <div class="relative mx-auto max-w-6xl px-4 py-10 lg:py-14">
-      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
         <div class="space-y-8">
           <section
-            class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card"
+            class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card"
           >
             <div class="flex flex-col gap-8 lg:flex-row">
               <div class="shrink-0">
@@ -122,26 +122,28 @@
                 >
                   <img
                     src="{{ asset('images/albert.png') }}"
-                    alt="Profile portrait"
+                    alt="Professional portrait of Albert Melendres"
                     class="h-full w-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
               <div class="flex-1 space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3">
-                  <h1 class="text-3xl font-semibold tracking-tight">
+                  <h1 class="text-4xl font-semibold tracking-tight leading-tight">
                     Albert Melendres
                   </h1>
                   <!-- Theme toggle -->
-                  <button id="theme-toggle" class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 w-8 h-8 text-xs text-slate-800 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-100">
+                  <button id="theme-toggle" class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/90 w-8 h-8 text-xs text-slate-800 shadow-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-800/80 dark:text-slate-100">
                     <span id="theme-toggle-icon" class="text-sm">🌓</span>
                   </button>
                 </div>
                 <p class="text-sm text-slate-500">
                  Davao City, Philippines
-                </p>
+                 
                 <p class="text-lg font-medium text-slate-800">
-                  Patient Core Coordinator · Technical Support Specialist · Appointment Setter
+                  Patient Core Coordinator · Technical Support Specialist · Project Manager
+                </p>
                 </p>
                 <div class="flex flex-wrap items-center gap-3 pt-2">
                   <button
@@ -171,7 +173,7 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center gap-3">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
@@ -180,7 +182,7 @@
               </div>
               <p class="text-sm text-slate-400">Short bio & focus areas</p>
             </div>
-            <div class="space-y-4 text-base leading-relaxed text-slate-700">
+            <div class="space-y-4 text-base leading-relaxed text-slate-800">
               <p>
               I’m a skilled individual with a strong background in healthcare appointment setting and technical support. 
               I excel at managing patient schedules, coordinating with clinical teams, and ensuring seamless communication with insurance providers, all while maintaining accuracy and compliance.
@@ -195,7 +197,7 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center gap-3">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
@@ -219,6 +221,7 @@
                   <span class="chip">Microsoft Dynamics 365</span>
                   <span class="chip">Salesforce Health Cloud</span>
                   <span class="chip">RainTree</span>
+                  <span class="chip">GHL</span>
                 </div>
               </div>
               <div>
@@ -247,67 +250,52 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center gap-3">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
               >
-                Beyond Work
-              </div>
             </div>
             <p class="text-base leading-relaxed text-slate-700">
-              I support small freelancing projects through hands-on project management, continuously gaining experience while contributing to real work. 
-              I'm deeply interested in AI automation and committed to ongoing upskilling to expand my capabilities.
-            </p>
+             I always try to upskill and push myself to learn more. I spend time improving what I can offer, exploring new opportunities, and thinking about how I can grow financially by providing 
+             valuable services. And when I’m not focused on work, I unwind by watching anime, short series and movies.
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center justify-between">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
               >
                 Recent Projects
               </div>
-              <button
-                class="text-sm font-semibold text-primary-600 hover:text-primary-500"
-              >
-               
-              </button>
+              <a href="/projects" class="text-sm font-semibold text-primary-600 hover:text-primary-500 transition-colors">
+                View All →
+              </a>
             </div>
             <div class="grid gap-4 md:grid-cols-2">
-              <article
-                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
-              >
+              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 01
                 </p>
                 <h4 class="mt-2 text-lg font-semibold text-slate-900">
-                 Barangay 12 Health Management Center
+                  Barangay 12 Health Management Center
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
                   CRM - Healthcare Appointment Scheduling System.
                 </p>
-                 
-                  </svg>
-                </a>
               </article>
-              <article
-                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
-              >
+              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 02
                 </p>
-                <h4 class="mt-2 text-lg font-semibold text-slate-900">
+                <h4 class="mt-2 text-xl font-semibold text-slate-900 leading-snug">
                   Library Management System
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
-                 Library book tracking and management application.
+                  Library book tracking and management application.
                 </p>
-            
               </article>
-              <article
-                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
-              >
+              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 03
                 </p>
@@ -317,11 +305,8 @@
                 <p class="mt-1 text-sm text-slate-600">
                   Basic calculator web application for arithmetic operations.
                 </p>
-                 
               </article>
-              <article
-                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
-              >
+              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 04
                 </p>
@@ -329,15 +314,14 @@
                   Simple Automation of Leads
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
-                Web scraping and automation of lead generation using N8N.
+                  Web scraping and automation of lead generation using N8N.
                 </p>
-                
               </article>
             </div>
           </section>
         </div>
 
-        <div class="space-y-8">
+        <div class="space-y-10">
 
           <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
             <div class="mb-5 flex items-center justify-between">
@@ -345,7 +329,7 @@
                 Experience
               </div>
               <a
-                href="https://drive.google.com/file/d/1-GNiqZfvWc8Jl2UeQYQ4O7k5JAzhojI4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ggXV4COSADkPWWjeSTBobEyiEzWrDlsa/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-xl border border-primary-200 bg-primary-50 px-4 py-2 text-sm font-semibold text-primary-600 transition hover:border-primary-300 hover:bg-primary-100"
@@ -379,7 +363,7 @@
                     2025
                   </p>
                   <h4 class="text-base font-semibold text-slate-900">
-                   Patient Core Coordinator - Clinic Appointment Setter
+                   Patient Coordinator - Remote Work
                   </h4>
                   <p class="text-sm text-slate-600"> Professional Physical Therapy, USA</p>
                 </div>
@@ -396,7 +380,7 @@
                     2024
                   </p>
                   <h4 class="text-base font-semibold text-slate-900">
-                   Appointment Setter
+                   Appointment Setter - Remote Work
                   </h4>
                   <p class="text-sm text-slate-600">
                     Solar Exclusive, USA
@@ -474,7 +458,7 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center justify-between">
               <div class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600">
                 Certifications
@@ -491,10 +475,19 @@
               <p>TMobile - Technical Support Training</p>
               <p>IT Specialist Certiport · HTML CSS</p>
               <p>IT Specialist Certiport · Database Management</p>
+               <p>Protecting Sensitive
+Information 2025 -
+Sutherland</p>
+              <p>Healthcare Compliance and
+Privacy - Fraud, Waste and
+Abuse</p>
+ <p>Healthcare Compliance and
+Privacy - General
+Compliance</p>
             </div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center justify-between">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
@@ -519,7 +512,7 @@
             <div id="rec-content" class="min-h-[160px] space-y-3"></div>
           </section>
 
-          <section class="rounded-3xl border border-slate-100 bg-white p-8 shadow-card">
+          <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
             <div class="mb-5 flex items-center justify-between">
               <div class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600">
                 Social Links
@@ -543,6 +536,11 @@
             </div>
           </section>
         </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div class="mt-12 border-t border-slate-200 pt-8 text-center text-sm text-slate-600 dark:text-slate-400">
+        © 2025 Albert Melendres. All rights reserved.
       </div>
     </div>
 

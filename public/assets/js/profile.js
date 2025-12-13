@@ -9,8 +9,13 @@ const recs = [
     quote: "Mentoring 2 groups of 8-10 newhire agents, working calm and efficient.",
     name: "Memel Akut",
     title: "Team Lead · T-Mobile",
-  },
    
+  },
+   {
+    quote: "Handle patient with care and professionalism. Always ready to help and assist.",
+    name: "Goldie Benjamin",
+    title: "Operation Manager · Sutherland Global",
+   },
 ];
 
 let recIndex = 0;
