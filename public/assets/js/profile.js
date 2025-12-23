@@ -73,12 +73,23 @@ function initChips() {
 }
 
 // Wait for DOM to be ready
+console.log("profile.js loaded, DOM state:", document.readyState);
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM content loaded, initializing...");
     initRecommendations();
     initChips();
   });
 } else {
+  console.log("DOM already loaded, initializing...");
   initRecommendations();
   initChips();
 }
+
+// Also try a setTimeout as fallback
+setTimeout(() => {
+  console.log("Fallback init running");
+  initRecommendations();
+  initChips();
+}, 100);
