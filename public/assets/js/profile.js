@@ -1,21 +1,29 @@
 // Profile page behavior: recommendations carousel + chip helper classes
 const recs = [
   {
-    quote: "3 Months phone calls no DSAT or 0 surveys. Clear 10s and good performance ",
+    quote: "Consistently maintained excellent performance over a three-month period, handling phone calls with zero DSATs and no negative survey results. Achieved clear 10/10 customer satisfaction scores while demonstrating strong communication skills, professionalism, and reliability. ",
     name: "Boss Loi",
     title: "Operations Manager · T-Mobile",
   },
   {
-    quote: "Mentoring 2 groups of 8-10 newhire agents, working calm and efficient.",
+    quote: "Led and mentored two groups of 8–10 new hire agents, maintaining a calm and efficient approach while ensuring smooth onboarding and strong performance.",
     name: "Memel Akut",
     title: "Team Lead · T-Mobile",
    
   },
    {
-    quote: "Handle patient with care and professionalism. Always ready to help and assist.",
+    quote: "Handled an average of 50 calls per day while assisting patients with care, professionalism, and a strong service-oriented mindset.",
     name: "Goldie Benjamin",
     title: "Operation Manager · Sutherland Global",
    },
+
+    {
+    quote: "Created and maintained organized, clear, and accessible documentation to support efficient operations.",
+    name: "Lebron James Pathay",
+    title: "BSIT Student · University of Mindanao - Main Campus",
+   },
+
+   
 ];
 
 let recIndex = 0;

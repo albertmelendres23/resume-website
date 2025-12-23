@@ -110,7 +110,7 @@
   </head>
   <body class="bg-gray-50 text-slate-900 font-sans transition-colors duration-200 leading-relaxed">
     <div class="relative mx-auto max-w-6xl px-4 py-10 lg:py-14">
-      <div class="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-start">
         <div class="space-y-8">
           <section
             class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card"
@@ -198,17 +198,21 @@
           </section>
 
           <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
-            <div class="mb-5 flex items-center gap-3">
+            <div class="mb-5 flex items-center justify-between">
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
               >
                 Applications
               </div>
-              <button
-                class="text-sm font-semibold text-primary-600 hover:text-primary-500"
+              <a
+                href="/applications"
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-500"
               >
-               
-              </button> 
+                View All
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
             <div class="grid gap-6 md:grid-cols-3">
               <div>
@@ -255,10 +259,13 @@
               <div
                 class="rounded-2xl bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary-600"
               >
+              Beyond Work
+              </div>
             </div>
             <p class="text-base leading-relaxed text-slate-700">
              I always try to upskill and push myself to learn more. I spend time improving what I can offer, exploring new opportunities, and thinking about how I can grow financially by providing 
-             valuable services. And when I’m not focused on work, I unwind by watching anime, short series and movies.
+             valuable services. And when I'm not focused on work, I unwind by watching anime, short series and movies.
+            </p>
           </section>
 
           <section class="rounded-3xl border border-slate-100 bg-white p-10 shadow-card">
@@ -268,23 +275,36 @@
               >
                 Recent Projects
               </div>
-              <a href="/projects" class="text-sm font-semibold text-primary-600 hover:text-primary-500 transition-colors">
-                View All →
+              <a
+                href="/projects"
+                class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-500"
+              >
+                View All
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             </div>
             <div class="grid gap-4 md:grid-cols-2">
-              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
+              <article
+                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
+              >
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 01
                 </p>
                 <h4 class="mt-2 text-lg font-semibold text-slate-900">
-                  Barangay 12 Health Management Center
+                 Barangay 12 Health Management Center
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
                   CRM - Healthcare Appointment Scheduling System.
                 </p>
+                 
+                  </svg>
+                </a>
               </article>
-              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
+              <article
+                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
+              >
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 02
                 </p>
@@ -292,10 +312,13 @@
                   Library Management System
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
-                  Library book tracking and management application.
+                 Library book tracking and management application.
                 </p>
+            
               </article>
-              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
+              <article
+                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
+              >
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 03
                 </p>
@@ -305,8 +328,11 @@
                 <p class="mt-1 text-sm text-slate-600">
                   Basic calculator web application for arithmetic operations.
                 </p>
+                 
               </article>
-              <article class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30">
+              <article
+                class="rounded-2xl border border-slate-100 p-5 hover:border-primary-100 hover:bg-primary-50/30"
+              >
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
                   PROJECT 04
                 </p>
@@ -314,8 +340,9 @@
                   Simple Automation of Leads
                 </h4>
                 <p class="mt-1 text-sm text-slate-600">
-                  Web scraping and automation of lead generation using N8N.
+                Web scraping and automation of lead generation using N8N.
                 </p>
+                
               </article>
             </div>
           </section>
@@ -499,13 +526,17 @@ Compliance</p>
                   id="rec-prev"
                   class="rounded-full border border-slate-200 p-2 text-slate-500 hover:bg-slate-50"
                 >
-                  ◀
+                  <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
                 </button>
                 <button
                   id="rec-next"
                   class="rounded-full border border-slate-200 p-2 text-slate-500 hover:bg-slate-50"
                 >
-                  ▶
+                  <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -533,16 +564,28 @@ Compliance</p>
   <span class="text-lg">💻</span>
   <span class="text-sm font-medium">Upwork</span>
 </a>
+
+<a href="https://www.instagram.com/albertmelendres12/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 rounded-lg border border-slate-100 p-3 text-black dark:text-white hover:border-primary-100 hover:bg-primary-50/30 dark:hover:border-slate-600 dark:hover:bg-slate-800/50">
+  <span class="text-lg">💻</span>
+  <span class="text-sm font-medium">Instagram</span>
+</a>
+
+<a href="https://github.com/albertmelendres23" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 rounded-lg border border-slate-100 p-3 text-black dark:text-white hover:border-primary-100 hover:bg-primary-50/30 dark:hover:border-slate-600 dark:hover:bg-slate-800/50">
+  <span class="text-lg">💻</span>
+  <span class="text-sm font-medium">Github</span>
+</a>
+
+
             </div>
           </section>
         </div>
       </div>
 
       <!-- Copyright section -->
-      <div class="mt-12 border-t border-slate-200 pt-8 text-center text-sm text-slate-600 dark:text-slate-400">
-        © 2025 Albert Melendres. All rights reserved.
-      </div>
+      <div class="mt-12 border-t border-slate-200 pt-8 text-center text-sm copyright-text">
+ 
     </div>
+
 
     <!-- Page JS (carousel + chip helpers) -->
     <script src="{{ asset('assets/js/profile.js') }}"></script>

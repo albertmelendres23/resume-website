@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Projects - Albert Melendres</title>
-    
+    <title>All Applications - Albert Melendres</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Copyright CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/copyright.css') }}" />
-    
+
     <script>
       // Tailwind config with dark mode
       tailwind.config = {
@@ -73,9 +73,9 @@
               </svg>
               <span class="font-semibold">Back to Home</span>
             </a>
-            
-            <h1 class="text-2xl font-bold">All Projects</h1>
-            
+
+            <h1 class="text-2xl font-bold">All Applications</h1>
+
             <!-- Dark Mode Toggle -->
             <button
               id="themeToggle"
@@ -115,130 +115,97 @@
       <main class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="mb-8">
           <p class="text-slate-600 dark:text-slate-400">
-            A collection of projects I've built and worked on throughout my career.
+            A collection of applications and tools I've used and mastered throughout my career.
           </p>
         </div>
 
-        <!-- Projects Grid -->
+        <!-- Applications Grid -->
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Project 1 -->
-          <a href="https://drive.google.com/file/d/14jer6E5-gjPPxTCPs47paPwKuE3ifvHq/view?usp=sharing" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
+          <!-- CRM Applications -->
+          <div class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 01
+              CRM
             </p>
             <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              Barangay 12 Health Management Center
+              CRM Applications
             </h3>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              CRM - Healthcare Appointment Scheduling System for managing patient appointments and health records.
+              Customer Relationship Management tools for managing client interactions and data.
             </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+            <div class="mt-4 space-y-2">
+              <div class="chip">Salesforce</div>
+              <div class="chip">Microsoft Dynamics 365</div>
+              <div class="chip">Salesforce Health Cloud</div>
+              <div class="chip">RainTree</div>
+              <div class="chip">GHL</div>
             </div>
-          </a>
+          </div>
 
-          <!-- Project 2 -->
-          <a href="#" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
+          <!-- Phone Applications -->
+          <div class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 02
+              PHONE APP
             </p>
             <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              Library Management System
+              Phone Applications
             </h3>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              Library book tracking and management application for cataloging and organizing library resources.
+              Communication and telephony tools for professional calls and meetings.
             </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+            <div class="mt-4 space-y-2">
+              <div class="chip">Zoom</div>
+              <div class="chip">Avaya</div>
+              <div class="chip">CallTools</div>
+              <div class="chip">Salesforce softphone</div>
             </div>
-          </a>
+          </div>
 
-          <!-- Project 3 -->
-          <a href="#" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
+          <!-- Other Tools -->
+          <div class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 03
+              OTHER TOOLS
             </p>
             <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              Simple Calculator - Python
+              Productivity Tools
             </h3>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              Basic calculator web application for arithmetic operations with a clean and intuitive user interface.
+              Essential software and AI tools for daily operations and efficiency.
             </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+            <div class="mt-4 space-y-2">
+              <div class="chip">Microsoft Office</div>
+              <div class="chip">Excel</div>
+              <div class="chip">Outlook and Gmail</div>
+              <div class="chip">Calendly</div>
+              <div class="chip">Google Calendar</div>
+              <div class="chip">ChatGPT other AI tools</div>
             </div>
-          </a>
+          </div>
 
-          <!-- Project 4 -->
-          <a href="#" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
+          <!-- Tech Tools -->
+          <div class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
             <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 04
+              TECH TOOLS
             </p>
             <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              Simple Automation of Leads
+              Development & Design Tools
             </h3>
             <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              Web scraping and automation of lead generation using N8N for efficient data collection and management.
+              Software and platforms used for development, design, and database management.
             </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
+            <div class="mt-4 space-y-2">
+              <div class="chip">VSCode</div>
+              <div class="chip">Microsoft Studio</div>
+              <div class="chip">MySQL</div>
+              <div class="chip">pgAdmin4 (PostgreSQL)</div>
+              <div class="chip">Laragon</div>
+              <div class="chip">Supabase</div>
+              <div class="chip">Figma</div>
+              <div class="chip">Canva</div>
+              <div class="chip">CapCut</div>
+              <div class="chip">AI tools</div>
             </div>
-          </a>
-
-          
-          <!-- Project 5 -->
-          <a href="https://drive.google.com/file/d/1Dgs95jNqUmmMzbdBP_NjxGAA4KWQQqhh/view?usp=sharing" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 05
-            </p>
-            <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              AHLuTang
-            </h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              An Online Loan application showcasing the process and the UI/UX Design. (Poster only)
-            </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </a>
-
-          <a href="https://drive.google.com/file/d/1AvP1Mkd8WG95zPdPoc6foOBuMcYqTU2j/view?usp=sharing" class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-lg hover:border-primary-200 transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-primary-600">
-            <p class="text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
-              PROJECT 06
-            </p>
-            <h3 class="mt-3 text-xl font-semibold text-slate-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                Decor Website
-            </h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
-              A Website gallery for decorating services, showcasing their own project and events.
-            </p>
-            <div class="mt-4 flex items-center text-primary-600 dark:text-primary-400 font-medium text-sm group-hover:gap-2 transition-all">
-              <span>View Project</span>
-              <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </a>
-
+          </div>
         </div>
-
-
-
       </main>
 
       <!-- Footer -->
